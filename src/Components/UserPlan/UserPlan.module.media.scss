@@ -1,0 +1,27 @@
+@media (max-width: 600px) {
+  .planBox {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem !important;
+    gap: 6rem;
+    // background-color: red;
+  }
+
+  .planBox img {
+    width: 23% !important;
+    margin-bottom: 0 !important;
+  }
+
+  .myRow {
+    margin-top: 0 !important;
+  }
+
+  .durationPlan {
+    margin-top: 1rem !important;
+  }
+
+  .myContainer {
+    padding-top: 2rem;
+  }
+}

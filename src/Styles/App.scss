@@ -1,0 +1,30 @@
+@import "./App._variables.scss";
+
+@font-face {
+  font-family: "f-regular";
+  src: url("../assets/fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "f-regular";
+}
+
+.primary-text {
+  color: $primaryColor;
+}
+
+.secondary-text {
+  color: $secondaryColor;
+}
+
+.gray-text {
+  color: $grayColor;
+}
+
+.layoutHeight {
+  height: 80vh !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

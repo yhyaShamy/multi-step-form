@@ -1,0 +1,41 @@
+@import "../../Styles/App._variables.scss";
+
+.control {
+  bottom: 2%;
+}
+
+.myContainer {
+  width: 86%;
+}
+
+.contentBox {
+  padding-inline: 6rem !important;
+  height: 80vh;
+}
+
+.prevControl {
+  transition: color 0.3s;
+  &:hover {
+    color: $primaryColor;
+  }
+}
+
+.nextControl {
+  background-color: $primaryColor;
+  transition: background 0.3s;
+  &:hover {
+    background-color: hsl(213, 96%, 25%);
+  }
+}
+
+.confirmBtn {
+  background-color: $blueColor;
+  transition: background 0.3s;
+  &:hover {
+    background-color: hsl(243, 100%, 70%);
+  }
+}
+
+.layoutHeight {
+  height: 80vh !important;
+}

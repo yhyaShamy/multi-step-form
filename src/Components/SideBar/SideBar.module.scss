@@ -1,0 +1,19 @@
+@import "../../Styles/App._variables.scss";
+
+.stepNumber {
+  border: 1px solid white;
+  color: white;
+  width: 3rem;
+  height: 3rem;
+}
+
+.active {
+  background-color: $lightBlueColor;
+  color: $primaryColor;
+}
+
+.sideBarBg {
+  background: url("../../assets/images/bg-sidebar-desktop.svg");
+  background-position: center center;
+  background-size: cover;
+}

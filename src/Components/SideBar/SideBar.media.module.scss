@@ -1,0 +1,19 @@
+@media (max-width: 600px) {
+  .sideBar {
+    background: url("../../assets/images/bg-sidebar-mobile.svg");
+    background-position: center center;
+    background-size: cover;
+    flex-direction: row !important;
+    justify-content: center;
+    border-radius: 0 !important;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    height: 30% !important;
+    width: 100% !important;
+  }
+  .sideBarLink {
+    display: none;
+  }
+}

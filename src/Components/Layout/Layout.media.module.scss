@@ -1,0 +1,30 @@
+@import "../../Styles/App._variables.scss";
+
+@media (max-width: 600px) {
+  .myContainer {
+    overflow-x: hidden;
+    width: 100% !important;
+    padding: 6rem 0;
+  }
+  .box {
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background-color: $blueOpacityColor !important;
+    height: calc(100% + 10rem) !important;
+  }
+  .contentBox {
+    width: 88%;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding: 0 1rem !important;
+    background-color: white;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    z-index: 100;
+    height: auto !important;
+    margin-bottom: 4rem;
+  }
+
+  .control {
+    bottom: calc(-15% - 4rem);
+  }
+}

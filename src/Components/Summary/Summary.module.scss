@@ -1,0 +1,16 @@
+@import "../../Styles/App._variables.scss";
+
+.summaryBox {
+  background-color: $blueOpacityColor;
+}
+
+.totalPrice {
+  color: $blueColor;
+}
+
+a {
+  transition: color 0.3s;
+  &:hover {
+    color: $blueColor;
+  }
+}

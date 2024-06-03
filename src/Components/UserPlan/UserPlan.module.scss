@@ -1,0 +1,48 @@
+@import "../../Styles/App._variables.scss";
+
+.img {
+  width: 40%;
+}
+
+.planBox {
+  transition: border 0.3s;
+  &:hover {
+    border: 1px solid $blueColor;
+  }
+}
+
+.active {
+  background-color: $blueOpacityColor !important;
+  border: 1px solid $blueColor !important;
+}
+
+.durationPlan {
+  background-color: $blueOpacityColor;
+  p {
+    transition: color 0.3s;
+  }
+}
+
+.togglerSlide {
+  content: "";
+  background-color: $primaryColor;
+  width: 3.7rem;
+  height: 1.8rem;
+  position: relative;
+  &::after {
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transition: left 0.4s;
+    transform: translateY(-50%);
+  }
+}
+
+body:has(input:checked) .togglerSlide::after {
+  left: 60%;
+}
