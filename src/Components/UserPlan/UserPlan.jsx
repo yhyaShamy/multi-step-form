@@ -62,7 +62,6 @@ export default function UserPlan() {
   }
 
   const toggleBilleng = () => {
-    console.log("operation", selectedPlan);
     setisYearly(!isYearly);
     if (isYearly || wasYearly) {
       setWasYearly(false);
@@ -72,15 +71,12 @@ export default function UserPlan() {
   };
 
   useEffect(() => {
-    setPrevControl("userinfo");
+    setNextControl(null);
     setSideBarLink("userplan");
     setWasYearly(currentSelectedPlan?.duration == "yearly");
-    console.log(wasYearly);
     if (wasYearly) {
       setisYearly(!isYearly);
     }
-
-    console.log("from useEffect : ", isYearly, wasYearly);
 
     $(".planBox").on("click", function (e) {
       $(".planBox").removeClass(styles.active);
@@ -116,7 +112,6 @@ export default function UserPlan() {
                       : ""
                   }`}
                   onClick={() => {
-                    console.log(plan);
                     setSelectedPlan(plan);
                     setNextControl("useraddons");
                   }}

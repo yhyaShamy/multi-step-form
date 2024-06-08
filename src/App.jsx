@@ -58,11 +58,7 @@ const myRoute = createBrowserRouter([
       },
       {
         path: "thankYou",
-        element: (
-          <ProtectingReact>
-            <ThankYou />
-          </ProtectingReact>
-        ),
+        element: <ThankYou />,
       },
     ],
   },

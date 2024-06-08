@@ -13,6 +13,10 @@ export default function ThankYou() {
     setSideBarLink("summary");
     setIsConfirmed(true);
     setPrevControl(null);
+
+    return () => {
+      setIsConfirmed(false);
+    };
   }, []);
 
   if (!isFinish) {

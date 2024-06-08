@@ -1,15 +1,28 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import style from "./Layout.module.scss";
 import responseStyle from "./Layout.media.module.scss";
 import { Link, Outlet } from "react-router-dom";
 import { controlContext } from "../Context/ControlContext";
 import SideBar from "../SideBar/SideBar";
 import { authContext } from "../Context/AuthContext";
+import { plansContext } from "../Context/plansContext";
 
 export default function Layout() {
-  const { prevControl, nextControl, sideBarLink } = useContext(controlContext);
-  const { userReadyToSeeSummary, setIsFinish, isConfirmed } =
-    useContext(authContext);
+  const { prevControl, nextControl, sideBarLink, setNextControl } =
+    useContext(controlContext);
+  const {
+    userReadyToSeeSummary,
+    setIsFinish,
+    isConfirmed,
+    setUserReadyToSeeSummary,
+    setIsRegister,
+    setIsConfirmed,
+  } = useContext(authContext);
+  const { setSelectedAddPlans, setSelectedPlan, setmyAddPlan, setprevChecked } =
+    useContext(plansContext);
+
+  useEffect(() => {}, []);
+  console.log(" Layout :  ", nextControl, isConfirmed);
   return (
     <>
       <div
@@ -50,7 +63,16 @@ export default function Layout() {
                   <Link className="text-decoration-none" to="/thankYou">
                     <button
                       className={`border-0 rounded-3 ${style.confirmBtn} text-white fs-4 px-4 py-3`}
-                      onClick={() => setIsFinish(true)}
+                      onClick={() => {
+                        setIsFinish(true);
+                        setUserReadyToSeeSummary(false);
+                        setIsRegister(false);
+                        setmyAddPlan([]);
+                        setSelectedPlan(null);
+                        setSelectedAddPlans([]);
+                        setNextControl(null);
+                        setprevChecked(null);
+                      }}
                     >
                       Confirm
                     </button>

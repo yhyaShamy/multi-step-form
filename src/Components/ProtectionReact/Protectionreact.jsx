@@ -4,7 +4,6 @@ import { authContext } from "../Context/AuthContext";
 
 export default function ProtectingReact({ children }) {
   const { isRegister } = useContext(authContext);
-  console.log("from protection", isRegister);
   if (isRegister) {
     return children;
   } else {

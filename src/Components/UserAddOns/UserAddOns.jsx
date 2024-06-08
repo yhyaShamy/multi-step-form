@@ -96,15 +96,14 @@ export default function UserAddOns() {
   }
 
   const toggleSelect = (plan, e) => {
-    console.log(e.target.checked, plan.title);
-    if (e.target.checked) {
+    if (e.target.checked && selectedAddPlans) {
       setSelectedAddPlans((prevSelectedPlans) =>
-        prevSelectedPlans.includes(plan)
-          ? prevSelectedPlans.filter((p) => p !== plan)
+        prevSelectedPlans?.includes(plan)
+          ? prevSelectedPlans?.filter((p) => p !== plan)
           : [...prevSelectedPlans, plan]
       );
-    } else if (!e.target.checked) {
-      setSelectedAddPlans(selectedAddPlans.filter((p) => p.id != plan.id));
+    } else if (!e.target.checked && selectedAddPlans) {
+      setSelectedAddPlans(selectedAddPlans?.filter((p) => p.id != plan.id));
     }
   };
 
@@ -130,7 +129,7 @@ export default function UserAddOns() {
         <div className="mt-5 d-flex flex-column gap-4 mb-4">
           {myCurrentPlans.map((plan, i) => {
             return (
-              <label htmlFor={`myCheckBox${i}`}>
+              <label htmlFor={`myCheckBox${i}`} key={i}>
                 <div
                   className={`planBox cursor-pointer rounded-3 p-3 ${isPlanActive(
                     plan.title.toLowerCase().split(" ").join("")
