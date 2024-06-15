@@ -21,8 +21,6 @@ export default function Layout() {
   const { setSelectedAddPlans, setSelectedPlan, setmyAddPlan, setprevChecked } =
     useContext(plansContext);
 
-  useEffect(() => {}, []);
-  console.log(" Layout :  ", nextControl, isConfirmed);
   return (
     <>
       <div

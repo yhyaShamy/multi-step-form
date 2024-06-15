@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ae9e9ef2.css",
+    "main.js": "/static/js/main.0b704517.js",
+    "static/js/453.ce8be502.chunk.js": "/static/js/453.ce8be502.chunk.js",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
+    "static/media/Ubuntu-Regular.ttf": "/static/media/Ubuntu-Regular.1cbb1b79a23478cc89ad.ttf",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
+    "static/media/bg-sidebar-desktop.svg": "/static/media/bg-sidebar-desktop.6918153f38678372ceb1.svg",
+    "static/media/bg-sidebar-mobile.svg": "/static/media/bg-sidebar-mobile.ad41661b40ca0b967f3a.svg",
+    "static/media/icon-advanced.svg": "/static/media/icon-advanced.705bd10c4c1f688871d729633f0ca4ae.svg",
+    "static/media/icon-thank-you.svg": "/static/media/icon-thank-you.ee753f231cc5a5789b8eb922a96472c0.svg",
+    "static/media/icon-pro.svg": "/static/media/icon-pro.2e7e377da9c658d608624304a0f8dae6.svg",
+    "index.html": "/index.html",
+    "static/media/icon-arcade.svg": "/static/media/icon-arcade.a08c098289a31bb2f66d675be71565b3.svg",
+    "main.ae9e9ef2.css.map": "/static/css/main.ae9e9ef2.css.map",
+    "main.0b704517.js.map": "/static/js/main.0b704517.js.map",
+    "453.ce8be502.chunk.js.map": "/static/js/453.ce8be502.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ae9e9ef2.css",
+    "static/js/main.0b704517.js"
+  ]
+}
