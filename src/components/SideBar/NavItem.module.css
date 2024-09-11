@@ -1,0 +1,8 @@
+/* styles.css */
+
+.active li figure,
+li:hover figure {
+  background-color: hsl(206, 94%, 87%);
+  border-color: hsl(206, 94%, 87%);
+  color: hsl(213, 96%, 18%);
+}
